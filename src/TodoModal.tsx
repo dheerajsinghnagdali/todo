@@ -79,7 +79,7 @@ export const TodoModal: FC<TodoModalProps> = ({ onClose }) => {
             />
           </div>
 
-          <div className="mt-1.5 flex gap-x-4">
+          <div className="mt-1.5 grid grid-cols-2 gap-x-4">
             <div>
               <label className="text-sm" htmlFor="start-date">
                 Start date
