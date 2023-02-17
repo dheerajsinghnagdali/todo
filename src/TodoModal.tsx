@@ -66,12 +66,10 @@ export const TodoModal: FC<TodoModalProps> = ({ onClose }) => {
 
         <form onSubmit={onSubmit} className="mt-3">
           <div>
-            <label className="text-sm" htmlFor="title">
-              Title
-            </label>
+            <label htmlFor="title">Title</label>
             <input
               onChange={onChange}
-              className="mt-1.5 w-full rounded-lg py-1.5 px-2.5 text-sm"
+              className="mt-1.5 w-full rounded-lg text-sm"
               placeholder="Title"
               type="text"
               name="title"
@@ -81,24 +79,20 @@ export const TodoModal: FC<TodoModalProps> = ({ onClose }) => {
 
           <div className="mt-1.5 grid grid-cols-2 gap-x-4">
             <div>
-              <label className="text-sm" htmlFor="start-date">
-                Start date
-              </label>
+              <label htmlFor="start-date">Start date</label>
               <input
                 onChange={onChange}
-                className="mt-1.5 w-full rounded-lg py-1.5 px-2.5 text-sm"
+                className="mt-1.5 w-full rounded-lg text-sm"
                 type="date"
                 name="startDate"
                 id="start-date"
               />
             </div>
             <div>
-              <label className="text-sm" htmlFor="end-date">
-                End date
-              </label>
+              <label htmlFor="end-date">End date</label>
               <input
                 onChange={onChange}
-                className="mt-1.5 w-full rounded-lg py-1.5 px-2.5 text-sm"
+                className="mt-1.5 w-full rounded-lg text-sm"
                 type="date"
                 id="end-date"
                 name="endDate"
@@ -107,9 +101,7 @@ export const TodoModal: FC<TodoModalProps> = ({ onClose }) => {
           </div>
 
           <div className="mt-1.5">
-            <label className="text-sm" htmlFor="description">
-              Description
-            </label>
+            <label htmlFor="description">Description</label>
             <textarea
               onChange={onChange}
               className="mt-1.5 w-full resize-none rounded-lg text-sm"
@@ -122,24 +114,20 @@ export const TodoModal: FC<TodoModalProps> = ({ onClose }) => {
 
           <div className="mt-1.5 grid grid-cols-3 gap-x-4">
             <div>
-              <label className="text-sm" htmlFor="start-time">
-                Start time
-              </label>
+              <label htmlFor="start-time">Start time</label>
               <input
                 onChange={onChange}
-                className="mt-1.5 w-full rounded-lg py-1.5 px-2.5 text-sm"
+                className="mt-1.5 w-full rounded-lg text-sm"
                 type="time"
                 name="startTime"
                 id="start-time"
               />
             </div>
             <div>
-              <label className="text-sm" htmlFor="end-time">
-                End time
-              </label>
+              <label htmlFor="end-time">End time</label>
               <input
                 onChange={onChange}
-                className="mt-1.5 w-full rounded-lg py-1.5 px-2.5 text-sm"
+                className="mt-1.5 w-full rounded-lg text-sm"
                 type="time"
                 id="end-time"
                 name="endTime"
@@ -150,14 +138,14 @@ export const TodoModal: FC<TodoModalProps> = ({ onClose }) => {
           <div className="mt-6 grid gap-y-2">
             <button
               type="submit"
-              className="rounded-lg bg-blue-200 px-2.5 py-1.5 text-sm font-medium text-blue-600 hover:bg-blue-300"
+              className="rounded-lg bg-blue-200 px-3 py-2 font-medium text-blue-600 hover:bg-blue-300"
             >
               Add
             </button>
             <button
               type="button"
               onClick={onClose}
-              className="rounded-lg border px-2.5 py-1.5 text-sm font-medium hover:bg-gray-100"
+              className="rounded-lg border px-3 py-2 font-medium hover:bg-gray-100"
             >
               Maybe later
             </button>
