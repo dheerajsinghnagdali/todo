@@ -11,7 +11,7 @@ interface TodoProps {
 }
 
 const Todo: FC<TodoProps> = (props) => {
-  const { id, title, description, endTime, startTime } = props;
+  const { id, title, description, endTime, startTime, by } = props;
   const { onCompleted } = useTodosContext();
 
   return (
@@ -30,7 +30,7 @@ const Todo: FC<TodoProps> = (props) => {
       </div>
 
       <div className="flex gap-x-2 pt-2 text-xs">
-        <span className="inline-block font-medium text-gray-500">Today</span>
+        <span className="inline-block font-medium text-gray-500">{by}</span>
         <span className="inline-block text-gray-400">
           {startTime} - {endTime}
         </span>

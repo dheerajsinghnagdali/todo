@@ -46,7 +46,7 @@ export const TodoModal: FC<TodoModalProps> = ({ onClose }) => {
       startTime,
       endTime,
       id: nanoid(),
-      by: "today",
+      by: "Today",
     });
     onClose();
   };
