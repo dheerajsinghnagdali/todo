@@ -30,7 +30,7 @@ export const useTodosContext = () => {
 
   if (value === undefined) {
     throw new Error(
-      "Wrap the component inside <Context.Provider></Context.Provider>"
+      "Wrap the component inside <TodosContext.Provider></TodosContext.Provider>"
     );
   }
 
